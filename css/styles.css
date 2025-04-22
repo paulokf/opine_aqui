@@ -1,0 +1,33 @@
+header {
+    display: flex; /* Habilita flexbox para o header */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: flex-start; /* Alinha os itens horizontalmente à esquerda */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body,section {
+    background-image: url("../imagens/logo_grande.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.logo {
+    height: 50px;
+    width:50px;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+}
+nav a {
+    margin-right: 10px; /* Espaço entre os botões */
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: black; /* Cor dos links */
+    font-weight: 600 ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer { 
+    margin-bottom: auto;
+}
+

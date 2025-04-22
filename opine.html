@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opine Aqui!</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="imagens/logo.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <a href="index.html" class="button">HOME</a>
+            <a href="opine.html" class="button">OPINE</a>
+            <a href="empresa.html" class="button">EMPRESA</a>
+            <a href="contato.html" class="button">CONTATO</a>
+        </nav>
+    </header> 
+    
+    <section>
+        <h1>Opine Aqui</h1>
+        <p class="body">Deixe seus comentários para melhoria dos produtos e serviços oferecidos.</p>
+        
+        <form id="corpo" action="process_form.php" method="POST">
+            <div id="formulario">
+                <h3>Espaço para sua opinião</h3>
+                <hr/>
+                <fieldset id="cadastro_cliente">
+                    <legend>Espaço para reclamações e elogios</legend>
+                    <p>Data: <input name="data" type="date" size="14" placeholder="Data" required></p>
+                    <p>Nome da empresa: <input name="empresa" type="text" size="85" maxlength="120" placeholder="Digite o nome da empresa" required></p>
+                    <p>E-Mail: <input name="email" type="email" size="25" maxlength="80" placeholder="Opcional"></p>
+                    <p>Número para contato: <input name="telefone" type="tel" placeholder="número de telefone (Opcional)"></p>
+                    <p>Avaliação: 
+                        <select name="avaliacao" required>
+                            <option value="">Selecione...</option>
+                            <option value="0">0-Insatisfeito</option>
+                            <option value="1">1-Extremamente insatisfeito</option>
+                            <option value="2">2-Muito insatisfeito</option>
+                            <option value="3">3-Moderadamente insatisfeito</option>
+                            <option value="4">4-Parcialmente Insatisfeito</option>
+                            <option value="5">5-insatisfeito</option>
+                            <option value="6">6-Neutro</option>
+                            <option value="7">7-Relativamente Satisfeito</option>
+                            <option value="8">8-Parcialmente Satisfeito</option>
+                            <option value="9">9-Moderadamente Satisfeito</option>
+                            <option value="10">10-Muito insatisfeito</option>  
+                        </select>
+                    </p>
+                    <p> Comentário</p><br/><input name="comentário" type="text" size="120" maxlength="320" placeholder="insira algum comentário desejado (opcional)"/></p>
+                    <p>Tipo de produto ou serviço: 
+                        <select name="produto" required>
+                            <option value="">Selecione...</option>
+                            <option value="produto">Produto alimentício</option>
+                            <option value="produto">Produto de limpeza</option>
+                            <option value="produto">Serviço alimentação</option>
+                            <option value="produto">Prestador de serviços</option>
+                            <option value="produto">Eletroportátil</option>
+                            <option value="produto">Bebidas</option>
+                            <option value="produto">Produto de beleza</option>
+                            <option value="produto">Construção civil</option>
+                            <option value="produto">Assistência técnica</option>
+                            <option value="produto">Telefonia Celular</option>
+                            <option value="produto">Outro</option>
+                        </select>
+                    </p>
+                    <p>Outros: <input name="outro" type="text" id="outro" size="100" placeholder="outro tipo de produto ou serviço não listado acima"></p>
+                    <p>Aceito o termo de privacidade<input name="privacidade" type="checkbox"/></p>
+                    <a href="termo.html" class="button">Para saber mais sobre o termo de privacidade </p>
+                </fieldset>
+            </br>
+                <div id="button">
+                    <input type="submit" value="Enviar" id="enviar">
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Projeto Integrador - UNIVESP. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

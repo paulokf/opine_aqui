@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opine Aqui!</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<header>
+    <a href="index.html">
+        <img src="imagens/logo.png" alt="logo" class="logo">
+    </a>
+    <nav>
+    <a href="index.html" class="button">HOME</a>
+    <a href="opine.html" class="button">OPINE</a>
+    <a href="empresa.html" class="button">EMPRESA</a>
+    <a href="contato.html" class="button">CONTATO</a>
+    
+    <nav>
+</header> 
+    
+    <form method="POST" id="fContato" action="" oninput="calc_total();">
+        <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+            <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="20" maxlength="80" placeholder="Nome Completo"/> </p>
+            <p><label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="30" maxlength="40" placeholder="E-Mail"/></p>
+                    
+        <fieldset id="endereco"><legend>Contato</legend>
+            <p><label for="cRua">Nome da empresa </label><input type="text" name="tRua" id="cRua" size="13" maxlength="120" placeholder="Nome da empresa em questão"/></p>
+            <p><label for="cNum">Telefone: </label><input type="number" name="tnum" id="cNum" min="0" max="99999"/></p>
+            <p><label for="cCid">Reclamação <input type="text" name="tCid" id="cCid" maxlength="500" size="20" placeholder="Comentário" list="cidades"/></label></p>
+        </fieldset>
+
+        <input type="image" name="tEnviar" id="cEnviar" src="imagens/buttonblueshadow.png"/>
+    </form>
+
+    <p class="body">Deixe seus comentários para melhoria dos produtos e serviços oferecidos.</p>
+
+        <footer>
+            <p>&copy; <span id="anoAtual"></span> Projeto Integrador - UNIVESP. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</body>
+
+</html>

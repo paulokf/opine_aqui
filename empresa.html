@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opine Aqui!</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<header>
+    <a href="index.html">
+        <img src="imagens/logo.png" alt="logo" class="logo">
+    </a>
+    <nav>
+    <a href="index.html" class="button">HOME</a>
+    <a href="opine.html" class="button">OPINE</a>
+    <a href="empresa.html" class="button">EMPRESA</a>
+    <a href="contato.html" class="button">CONTATO</a>
+    <nav>      
+</header> 
+<body>
+    <section>
+        <form>
+            <form id="corpo">
+                <div id="formulario_empresa">
+                    <h3>Cadastre sua empresa</h3>
+                    <hr/>
+                    <fieldset id="cadastro_empresa">
+                        <legend>Por favor preencher o cadastro para poder ser avaliado</legend>
+                        <p>Data <input name="data" type="date" size="14" placeholder="Data" />
+                        <p>Razão Social <input name='razao_social' type='varchar' size='85' maxlength="120" placeholder="Digite a razão social da sua empresa" />
+                        <p>CNPJ <input name="cnpj" type="varchar" size="14" placeholder="Insira a CNPJ"> </p>
+                            <!--GET /cnpj/{cnpj} HTTP/1.1
+                            Host: publica.cnpj.ws
+                            Accept: */*-->
+                        <p>Nome da empresa <input name='nome_empresa' type='varchar' size='85' maxlength="120" placeholder="Digite o nome da empresa" />
+                        <p>E-Mail <input name='login' type="text" size='25' maxlength="80" placeholder="Digite o e-mail para contato">
+                        <p>Número para contato <input name='telephone' type='tel' placeholder="número de telefone (Opcional)" />
+                        <p>CEP <input name='cep' type="text" size="9" maxlength="9" placeholder="Insira o CEP"/></p>
+                        <p>Endereço <input name='endereco' type='endereco' placeholder="coloque seu endereço" size="150"/></p>    
+                        <!--viacep.com.br/ws/01001000/json/-->
+                        <p>Senha <input name="senha" type="number" placeholder="Crie sua senha de no máximo 6 números"/>
+
+                        </p>
+                    
+                        </select></td>
+                            <td>
+                                <p>Tipo de produto ou serviço <select name="produto" size 6>
+                                    <option value="produto">Produto alimentício</option>
+                                    <option value="produto">Serviços gerais</option>
+                                    <option value="produto">Serviço alimentação</option>
+                                    <option value="produto">Prestador de serviços</option>
+                                    <option value="produto">Eletroportátil</option>
+                                    <option value="produto">Bebidas</option>
+                                    <option value="produto">Produto de beleza</option>
+                                    <option value="produto">Construção civil</option>
+                                    <option value="produto">Assistência técnica</option>
+                                    <option value="produto">Telefonia Celular</option>
+                                    <option value="produto">Outro</option>
+                                </select>
+                    </fieldset>
+                   
+                    
+                    <p>Outros: </p><input name="outro" type="text" id="outro" size="100" placeholder="outro tipo de produto ou serviço não listado acima" />
+                </div>
+                <p></p>
+                <div id="button">
+                    <input type="button" value="cadastrar" id="cadastrar" onclick="cadastrar()">
+                    <a href="login.html">Já cadastrado</a>
+                </div>
+                </form>
+                </div>
+            </form>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Projeto Integrador - UNIVESP. Todos os direitos reservados.</p>
+    </footer>
+</body>
